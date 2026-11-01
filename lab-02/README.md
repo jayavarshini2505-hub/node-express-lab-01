@@ -4,7 +4,13 @@
 **Registration Number:** 252U1R6099  
 **Section:** CSE-AI/ML-2B-207
 
-## 1. Objective
+## Live Deployment
+
+Live URL: https://node-express-lab-02.onrender.com
+
+Deployment Platform: Render
+
+# 1. Objective
 
 To connect an Express.js server with an SQLite database and implement CRUD (Create, Read, Update, Delete) operations through HTTP API routes. This experiment demonstrates how to create, retrieve, update, and delete book records using REST API endpoints.
 
