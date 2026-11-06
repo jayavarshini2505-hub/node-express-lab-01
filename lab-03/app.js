@@ -15,6 +15,18 @@ const initializeDBAndServer = async () => {
       filename: dbPath,
       driver: sqlite3.Database,
     });
+
+    // Auto-create book table if it doesn't exist on Render
+    await db.exec(`
+      CREATE TABLE IF NOT EXISTS book (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT,
+        author TEXT,
+        price INTEGER,
+        pages INTEGER
+      );
+    `);
+
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
       console.log(`Server Running at http://localhost:${PORT}/`);
