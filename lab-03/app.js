@@ -37,6 +37,20 @@ const initializeDBAndServer = async () => {
   }
 };
 
+// GET / Root route
+app.get("/", (request, response) => {
+  response.send({
+    message: "Welcome to Node Express Lab 03 API!",
+    endpoints: {
+      getAllBooks: "GET /books/",
+      getBookById: "GET /books/:bookId/",
+      addBook: "POST /books/",
+      updateBook: "PUT /books/:bookId/",
+      deleteBook: "DELETE /books/:bookId/"
+    }
+  });
+});
+
 initializeDBAndServer();
 
 // GET /books/ with search, filter, sorting, and pagination
