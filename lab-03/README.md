@@ -42,6 +42,7 @@ lab-03/
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 # Installation and Setup
 1. *Clone the repository*
