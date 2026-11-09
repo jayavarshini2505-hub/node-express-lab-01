@@ -26,7 +26,22 @@ To develop a clean REST API using Node.js, Express.js and SQLite by implementing
 
 # Project Structure
 **lab-03/**
-![Structure](image-6.png)
+# Project Structure
+```text
+lab-03/
+├── screenshots/
+│   ├── get-all-books.png
+│   ├── get-book-by-id.png
+│   ├── get-book-not-found.png
+│   ├── post-book-success.png
+│   ├── post-book-validation-error.png
+│   └── search-and-filter.png
+├── .gitignore
+├── app.js
+├── database.db
+├── package-lock.json
+├── package.json
+└── README.md
 
 # Installation and Setup
 1. *Clone the repository*
